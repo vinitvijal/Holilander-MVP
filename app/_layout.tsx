@@ -1,8 +1,7 @@
 import { DefaultTheme, ThemeProvider } from '@react-navigation/native';
 import { useFonts } from 'expo-font';
-import { Link } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
-import { SafeAreaView, Text } from 'react-native';
+import { Button, SafeAreaView, Text } from 'react-native';
 import 'react-native-reanimated';
 import './global.css';
 export default function RootLayout() {
@@ -19,7 +18,7 @@ export default function RootLayout() {
     <ThemeProvider value={DefaultTheme}>
       <SafeAreaView>
         <Text className='text-white'>Hello</Text>
-        <Link href="/explore" className=' text-pink-300'>Hreelo</Link>
+        <Button title='hello'>Hello</Button>
       </SafeAreaView>
       <StatusBar style="auto" />
     </ThemeProvider>

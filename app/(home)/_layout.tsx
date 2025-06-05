@@ -11,7 +11,7 @@ export default function TabLayout() {
   const colorScheme = useColorScheme();
 
   return (
-<View className=' h-screen-safe-or-0 bg-white'>
+<View className=' h-screen-safe-or-0 bg-[#0F67B1]'>
     <Tabs
     screenOptions={({ route }) => ({
       headerShown: false,
@@ -43,7 +43,6 @@ export default function TabLayout() {
       <Tabs.Screen name="profile" options={{ title: 'Profile' }} />
     </Tabs>
           <StatusBar style="auto" />
-
   </View>
   );
 }
