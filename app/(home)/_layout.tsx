@@ -1,18 +1,16 @@
 import React from 'react';
 
-import { useColorScheme } from '@/hooks/useColorScheme';
 import { Ionicons } from '@expo/vector-icons';
 import { Tabs } from 'expo-router';
 
 import { StatusBar } from 'expo-status-bar';
-import { View } from 'react-native';
 
 export default function TabLayout() {
-  const colorScheme = useColorScheme();
 
   return (
-<View className=' h-screen-safe-or-0 bg-[#0F67B1]'>
+    <>
     <Tabs
+    
     screenOptions={({ route }) => ({
       headerShown: false,
       tabBarShowLabel: true,
@@ -29,10 +27,19 @@ export default function TabLayout() {
       tabBarActiveTintColor: '#007aff',
       tabBarInactiveTintColor: '#888',
       tabBarStyle: {
-        height: 70,
+        height: 80,
         paddingBottom: 10,
         paddingTop: 10,
-        borderRadius: 20,
+        borderTopLeftRadius: 40,
+        borderTopRightRadius: 40,
+        backgroundColor: 'white',
+        shadowColor: '#000',
+        shadowOffset: {
+          width: 0,
+          height: 0,
+        },
+        shadowOpacity: 0.12,
+        shadowRadius: 5,
       },
     })}
     >
@@ -43,6 +50,6 @@ export default function TabLayout() {
       <Tabs.Screen name="profile" options={{ title: 'Profile' }} />
     </Tabs>
           <StatusBar style="auto" />
-  </View>
+          </>
   );
 }
