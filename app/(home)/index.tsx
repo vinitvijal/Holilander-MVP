@@ -1,19 +1,19 @@
 import { Ionicons } from "@expo/vector-icons";
 import { useEffect, useState } from "react";
-import { SafeAreaView, ScrollView, Text, TouchableHighlight, TouchableOpacity, View } from "react-native";
+import { ScrollView, Text, TouchableHighlight, TouchableOpacity, View } from "react-native";
 import "../global.css";
 
 export default function HomeScreen() {
   return (
-    <SafeAreaView className=" h-screen-safe-or-0 bg-zinc-100">
-      <View className=" absolute top-0 w-full bg-transparent blur-md h-20 "/>
+    <View className="pt-10 bg-zinc-100">
+      <View className=" absolute top-0 w-full bg-first blur-md h-12 "/>
 
-    <ScrollView overScrollMode="never" >
+    <ScrollView overScrollMode="never" className=" " >
       <Hero />
       <MainCard />
       <AttendanceLog />
     </ScrollView>
-    </SafeAreaView>
+    </View>
   );
 }
 
