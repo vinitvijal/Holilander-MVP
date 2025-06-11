@@ -3,8 +3,6 @@ import { Image, Switch, Text, TouchableOpacity, View } from 'react-native';
 import '../global.css';
 
 export default function HomeScreen() {
-  const blurhash =
-  '|rF?hV%2WCj[ayj[a|j[az_NaeWBj@ayfRayfQfQM{M|azj[azf6fQfQfQIpWXofj[ayj[j[fQayWCoeoeaya}j[ayfQa{oLj?j[WVj[ayayj[fQoff7azayj[ayj[j[ayofayayayj[fQj[ayayj[ayfjj[j[ayjuayj[';
 
 
 
@@ -12,7 +10,7 @@ export default function HomeScreen() {
         <View className=' pt-12 bg-slate-100 h-screen-safe-or-0'>
           <View className=' bg-first h-44 -top-16 flex items-center justify-center'>
             <Image
-            src='https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fuser-profile&psig=AOvVaw12tIHqDorTHUxgcv0odHFQ&ust=1749752620878000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJD-89H-6Y0DFQAAAAAdAAAAABAEhttps://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fwww.gravatar.com%2Favatar%2F2c7d99fe281ecd3bcd65ab915bac6dd5%3Fs%3D250'
+            src={'https://picsum.photos/id/1/200/300'}
               // source="https://picsum.photos/seed/696/3000/2000"
               // placeholder={{ blurhash }}
               // contentFit="cover"
